@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo img:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    text-decoration: none;
+}
+
+.actions button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #0a0a0a;
+    background-color: #00d4ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+.actions button:hover {
+    background-color: #01b0e8;
+    transform: scale(1.05);
+}
+
+.cart-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.cart-div img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-div h2 {
+    margin: 0;
+    color: #333;
+}
+
+.cart-div p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.cart-div a {
+    color: #f44336;
+    text-decoration: none;
+}
+
+.cart-div form {
+    display: inline-block;
+}
+
+.cart-div input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-div input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.numItems {
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.username {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 212, 255, 0.7);
+}
+
+
+form[action='checkout.php'] input[type='submit'] {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #00d4ff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+form[action='checkout.php'] input[type='submit']:hover {
+    background-color: #01b0e8;
+    transform: scale(1.05);
+}
